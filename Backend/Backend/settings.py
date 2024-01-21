@@ -5,6 +5,9 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# Static files (CSS, JavaScript, images)
+# STATIC_URL = '/static/'
+# STATICFILES_DIRS = [BASE_DIR / 'Frontend' / 'build' / 'static']
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
@@ -15,7 +18,7 @@ SECRET_KEY = '=4b!i3z3$m_e=#8f11@anqkqy^we0wtjar!-$na-!cfws8q_1)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['startupclub.onrender.com']
+ALLOWED_HOSTS = ['startupclub.onrender.com', '127.0.0.1']
 
 
 # Application definition
