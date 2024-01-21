@@ -15,7 +15,7 @@ function Contactus() {
     ContactusData.append('firstname', firstname);
     ContactusData.append('lastname', lastname);
     ContactusData.append('message', message);
-    fetch("http://127.0.0.1:8000/Frontend/contactus/", {
+    fetch("http://startupclub.onrender.com/Frontend/contactus/", {
       method: 'POST',
       body: ContactusData
     })

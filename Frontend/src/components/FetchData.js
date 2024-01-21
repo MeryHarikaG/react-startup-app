@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 function FetchData() {
     const [posts, setPosts] = useState([])
     useEffect(() => {
-        fetch('http://127.0.0.1:8000/admin/Frontend/post/', {
+        fetch('http://1startupclub.onrender.com/admin/Frontend/post/', {
             'method': 'GET',
             headers: {
                 'content-Type': 'application/json',

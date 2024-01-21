@@ -16,7 +16,7 @@ function Experience() {
     ExperienceData.append('questions', questions);
     ExperienceData.append('rate', rate);
     ExperienceData.append('remarks', remarks);
-    fetch("http://127.0.0.1:8000/Frontend/experiences/", {
+    fetch("http://startupclub.onrender.com/Frontend/experiences/", {
       method: 'POST',
       body: ExperienceData
     })
