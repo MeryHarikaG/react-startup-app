@@ -23,6 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('Frontend.urls')),
     path('auth/', obtain_auth_token),
-    re_path(r'^.*', TemplateView.as_view(template_name='build/index.html')),
+    # re_path(r'^.*', TemplateView.as_view(template_name='build/index.html')),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
