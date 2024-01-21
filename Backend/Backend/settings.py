@@ -2,9 +2,8 @@
 import os
 from pathlib import Path
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
+print(BASE_DIR)
 # Static files (CSS, JavaScript, images)
 # STATIC_URL = '/static/'
 # STATICFILES_DIRS = [BASE_DIR / 'Frontend' / 'build' / 'static']
@@ -70,6 +69,8 @@ CORS_ALLOWED_ORIGINS = [
 ]
 ROOT_URLCONF = 'Backend.urls'
 
+# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -85,7 +86,6 @@ TEMPLATES = [
         },
     },
 ]
-
 WSGI_APPLICATION = 'Backend.wsgi.application'
 
 
@@ -138,7 +138,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, '../Frontend/build/static'),
+    '../Frontend/build/static',
 ]
 # STATICFILES_DIRS = [
 #     BASE_DIR / 'Frontend/build/static',
