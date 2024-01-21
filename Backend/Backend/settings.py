@@ -142,3 +142,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # ACCOUNT_EMAIL_VERIFICATION = 'none'
 # ACCOUNT_AUTHENTICATION_METHOD = "username"
 # ACCOUNT_EMAIL_REQUIRED = False
+# settings.py
+
+# Use the 'django.db.models.AutoField' for Django versions below 3.2
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
