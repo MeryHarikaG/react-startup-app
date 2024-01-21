@@ -134,12 +134,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR, '../Frontend/build/static'),
-# ]
 STATICFILES_DIRS = [
-    BASE_DIR / 'Frontend/build/static',
+    os.path.join(BASE_DIR, '../Frontend/build/static'),
 ]
+# STATICFILES_DIRS = [
+#     BASE_DIR / 'Frontend/build/static',
+# ]
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # ACCOUNT_EMAIL_VERIFICATION = 'none'
