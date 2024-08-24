@@ -4,6 +4,7 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 print(BASE_DIR)
+
 # Static files (CSS, JavaScript, images)
 # STATIC_URL = '/static/'
 # STATICFILES_DIRS = [BASE_DIR / 'Frontend' / 'build' / 'static']
@@ -41,6 +42,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -68,6 +70,7 @@ CORS_ALLOWED_ORIGINS = [
     # 'http://127.0.0.1:5000',
     "https://65ad8516f5229ea260ff5a12--wonderful-sprinkles-775c04.netlify.app",
     "https://wonderful-sprinkles-775c04.netlify.app",
+    'https://react-startup-app.vercel.app'
     # '*',
 ]
 ROOT_URLCONF = 'Backend.urls'
@@ -89,6 +92,7 @@ TEMPLATES = [
         },
     },
 ]
+
 WSGI_APPLICATION = 'Backend.wsgi.application'
 
 
@@ -140,6 +144,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+print(STATIC_ROOT)
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "build", "static")
     # '../Frontend/build/static',
