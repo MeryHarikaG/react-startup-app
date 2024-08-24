@@ -49,6 +49,8 @@ MIDDLEWARE = [
 ]
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',  # or your local frontend URL
+    'http://startupclub.onrender.com',
+    'http://127.0.0.1:8000',
     # 'http://127.0.0.1:3000',
     # 'http://localhost:8000',  # or your local Django development server
     # 'http://127.0.0.1:8000',
@@ -64,6 +66,7 @@ CORS_ALLOWED_ORIGINS = [
     # 'http://127.0.0.1:8001',
     # 'http://localhost:5000',  # for Flask development server
     # 'http://127.0.0.1:5000',
+    "https://65ad8516f5229ea260ff5a12--wonderful-sprinkles-775c04.netlify.app",
     "https://wonderful-sprinkles-775c04.netlify.app",
     # '*',
 ]
