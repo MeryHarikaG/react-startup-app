@@ -23,7 +23,7 @@ const Fundsform = () => {
         FundData.append('role', role);
         FundData.append('members', members);
         FundData.append('idea', idea);
-        fetch("http://startupclub.onrender.com/Frontend/funds/", {
+        fetch("http://127.0.0.1:8000/Frontend/funds/", {
             method: 'POST',
             body: FundData
 

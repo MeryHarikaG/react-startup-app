@@ -1,7 +1,7 @@
 export default class APIService {
     static LoginUser(body) {
 
-        return fetch('http://startupclub.onrender.com/auth/', {
+        return fetch('http://127.0.0.1:8000/auth/', {
             'method': 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -16,7 +16,7 @@ export default class APIService {
 
     static RegisterUser(body) {
 
-        return fetch('http://startupclub.onrender.com/Frontend/users/', {
+        return fetch('http://127.0.0.1:8000/Frontend/users/', {
             'method': 'POST',
             headers: {
                 'Content-Type': 'application/json',

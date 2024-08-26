@@ -20,7 +20,7 @@ function Postcomponent() {
     }])
     const [searchTerm, setSearchTerm] = useState("");
     useEffect(() => {
-        fetch("http://startupclub.onrender.com/Frontend/posts/", {
+        fetch("http://127.0.0.1:8000/Frontend/posts/", {
             'method': "GET",
             headers: {
                 'content-Type': 'application/json',
