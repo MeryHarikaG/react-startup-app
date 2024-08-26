@@ -3,6 +3,5 @@ endpoints:
   - name: "REST API"
     port: 8000
     type: REST
-    runtime: python-3.9.16
     networkVisibility: Public
     context: /
