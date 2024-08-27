@@ -21,7 +21,7 @@ SECRET_KEY = '=4b!i3z3$m_e=#8f11@anqkqy^we0wtjar!-$na-!cfws8q_1)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['startupclub.onrender.com', '127.0.0.1', 'backend-1809109027.dp-development-djangoreactsuclub-50291-2390638183']
+ALLOWED_HOSTS = ['startupclub.onrender.com', '127.0.0.1', 'backend-1809109027.dp-development-djangoreactsuclub-50291-*', 'localhost']
 
 
 # Application definition
