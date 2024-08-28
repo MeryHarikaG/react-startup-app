@@ -11,7 +11,7 @@ function Uploadposts() {
         uploadData.append('driveLink', driveLink);
         uploadData.append('description', description);
         uploadData.append('upload', upload, upload.name);
-        fetch("http://127.0.0.1:8000/Frontend/posts/", {
+        fetch("/choreo-apis/djangoreactsuclub/backend/v1/Frontend/posts/", {
             method: 'POST',
             body: uploadData
         })

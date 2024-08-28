@@ -21,7 +21,7 @@ function Report() {
     ReportData.append('box4', box4);
     ReportData.append('box5', box5);
     ReportData.append('details', details);
-    fetch("http://127.0.0.1:8000/Frontend/reports/", {
+    fetch("/choreo-apis/djangoreactsuclub/backend/v1/Frontend/reports/", {
       method: 'POST',
       body: ReportData
     })

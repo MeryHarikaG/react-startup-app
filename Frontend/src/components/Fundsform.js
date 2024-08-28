@@ -23,7 +23,7 @@ const Fundsform = () => {
         FundData.append('role', role);
         FundData.append('members', members);
         FundData.append('idea', idea);
-        fetch("http://127.0.0.1:8000/Frontend/funds/", {
+        fetch("/choreo-apis/djangoreactsuclub/backend/v1/Frontend/funds/", {
             method: 'POST',
             body: FundData
 

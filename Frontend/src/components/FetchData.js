@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 function FetchData() {
     const [posts, setPosts] = useState([])
     useEffect(() => {
-        fetch('http://1startupclub.onrender.com/admin/Frontend/post/', {
+        fetch('/choreo-apis/djangoreactsuclub/backend/v1/admin/Frontend/post/', {
             'method': 'GET',
             headers: {
                 'content-Type': 'application/json',
