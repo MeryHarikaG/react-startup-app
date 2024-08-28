@@ -54,4 +54,4 @@ We used manual testing to ensure the application runs smoothly and securely. The
 - User Testing: Gathering input and feedback from sample users to improve the application.
 
 ## Application link
-https://65acd3b5f5229e349eff5a10--wonderful-sprinkles-775c04.netlify.app/
+[https://65acd3b5f5229e349eff5a10--wonderful-sprinkles-775c04.netlify.app/](https://6c46cff2-9966-4326-9b91-f32650123883.e1-us-cdp-2.choreoapps.dev/)
